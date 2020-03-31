@@ -1,0 +1,9 @@
+version: '3'
+services:
+  terraform:
+    image: hashicorp/terraform:light
+    volumes:
+      - .:/data
+    working_dir: /data
+    env_file:
+      - ./.env
